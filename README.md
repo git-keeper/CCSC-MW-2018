@@ -16,6 +16,10 @@ following:
 * Git
 * A UNIX-like command-line environment
 
+If you are running Windows and you do not have a UNIX-like environment
+installed such as the Windows Subsystem for Linux or Cygwin, you can still
+play the student role assuming you have a Git client installed.
+
 ## Part 1: The Student Role
 
 ## Part 2: The Faculty Role
@@ -29,12 +33,16 @@ complete and submit.
 ### Installing the Git-keeper Client
 
 Faculty members interact with Git-keeper via a command line client. The client
-can be installed using `pip` like this (FIXME: Switch from pypi test. Do we
-want them to use a virtual environment?):
+can be installed using `pip` like this (FIXME: Switch from pypi test):
 
 ```
 python3 -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/  git-keeper-client
 ```
+
+If you are familiar with Python virtual environments, you may want to install
+the client in a virtual environment. Otherwise, you will need to prepend `sudo`
+to the above command so that it has permission to install the package
+system-wide.
 
 ### Configuring the Client
 
@@ -78,16 +86,16 @@ Hopper,Grace,ghopper@example.edu
 Lovelace,Ada,alovelace@example.edu
 ```
 
-Edit a new CSV file and add the members of your group to the file. For the
-purposes of this tutorial you can give your class the same name as your
-username on the server, so you should name this CSV file `<username>.csv`,
-where `<username>` is your username on the server. Do not add yourself, as you
-cannot be a member of your own class.
+Edit a new CSV file and add the members of your group to the file. Do not add
+yourself, as you cannot be a member of your own class. The name of the file
+does not matter, but `<class name>.csv` is a good choice. For the purposes of
+this tutorial you can give your class the same name as your username on the
+server.
 
 Now you can add the class on the server using `gkeep`:
 
 ```
-gkeep add <username> <username>.csv
+gkeep add <class name> <class name>.csv
 ```
 
 Since everyone in your class is participating in this tutorial, everyone
@@ -119,12 +127,11 @@ URL. `email.txt` can be empty but it must exist.
 #### `tests`
 
 Lastly there must be a directory called `tests` which must contain a shell
-script named `action.sh`. (FIXME mention `action.py`?) The `tests` directory
-also contains any other code and data files that you will use to test student
-code.
+script named `action.sh`. The `tests` directory also contains any other code
+and data files that you will use to test student code.
 
 When a student submits an assignment to the server it creates a temporary clone
-of the student's repository and and temporary copy of the tests directory. The
+of the student's repository and a temporary copy of the tests directory. The
 server then enters the temporary `tests` directory and runs `action.sh` using
 `bash`, passing it the path to the temporary clone of the student's directory.
 
@@ -220,10 +227,10 @@ contents, then continue on to uploading the assignment.
 ## Uploading an Assignment
 
 Assuming you have created an assignment named `hw01-hello_world` for the class
-`<username>`. You can upload the assignment to the server like so:
+`<class name>`. You can upload the assignment to the server like so:
 
 ```
-gkeep upload <username> hw01-hello_world
+gkeep upload <class name> hw01-hello_world
 ```
 
 Uploading an assignment does not immediately send it to your students. If the
@@ -236,7 +243,7 @@ to the students. You can modify any one of the three components of the
 assignment individually, or update everything. To update the entire assignment:
 
 ```
-gkeep update <username> hw01-hello_world all
+gkeep update <class name> hw01-hello_world all
 ```
 
 Run `gkeep update` without additional arguments for more info.
@@ -247,7 +254,7 @@ Once you are satisfied with your uploaded assignment you can publish it, which
 will send it out to students:
 
 ```
-gkeep publish <username> hw01-hello_world
+gkeep publish <class name> hw01-hello_world
 ```
 
 Once an assignment is published you cannot update the base code or the email,
@@ -265,7 +272,7 @@ submissions.
 To fetch into the current directory:
 
 ```
-gkeep fetch <username> hw01-hello_world
+gkeep fetch <class name> hw01-hello_world
 ```
 
 The fetched directory for the assigment contains 2 subdirectories: `reports`
