@@ -265,7 +265,7 @@ submissions.
 To fetch into the current directory:
 
 ```
-gkeep fetch <username> hw01-hello_world .
+gkeep fetch <username> hw01-hello_world
 ```
 
 The fetched directory for the assigment contains 2 subdirectories: `reports`
