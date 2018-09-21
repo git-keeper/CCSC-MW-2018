@@ -1,0 +1,10 @@
+
+This is the first programming problem for CCSC-MW 2018.  Your task is to 
+Implement the function compute_hw_average that takes a list of homework 
+scores as its parameter.
+
+The following built-in Python functions will help:
+
+* len(lst) - returns the length of a list
+* min(lst) - returns the minimum value in a list
+* sum(lst) - returns the sum of the elements in a list
