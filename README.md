@@ -20,6 +20,17 @@ If you are running Windows and you do not have a UNIX-like environment
 installed such as the Windows Subsystem for Linux or Cygwin, you can still
 play the student role assuming you have a Git client installed.
 
+To begin, send an email to nsommer@wooster.edu with the subject "Git-keeper
+tutorial" and we will create an account for you on our tutorial server.
+
+## What is Git-keeper?
+
+Git-keeper is a system for distributing, collecting, and automatically testing
+programming assignments with instant feedback. Through using the system,
+students are introduced to the basic Git concepts of cloning, committing, and
+pushing. Git-keeper is designed to be simple enough that students can start
+using it at the very beginning of an introductory programming course.
+
 ## Part 1: The Student Role
 
 ## Part 2: The Faculty Role
