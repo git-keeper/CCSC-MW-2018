@@ -4,8 +4,8 @@
 
 ### Ben Coleman and Nathan Sommer
 
-This repository contains instructions and example assignments for the
-Git-keeper tutorial session at the CCSC 2018 Midwest Conference.
+This document contains instructions for the Git-keeper tutorial session at the CCSC 2018 Midwest Conference.  The other files in the  repository are example assignments (used in the later parts of the tutorial session).
+
 
 ## Prerequisites
 
@@ -17,10 +17,78 @@ following:
 * A UNIX-like command-line environment
 
 If you are running Windows and you do not have a UNIX-like environment
-installed such as the Windows Subsystem for Linux or Cygwin, you can still
-play the student role assuming you have a Git client installed.
+installed such as the Windows Subsystem for Linux or Cygwin, you can still play the student role assuming you have a Git client installed.
 
 ## Part 1: The Student Role
+
+In this portion of the tutorial you will experience Git-keeper from the student perspective.  The system will provide you with an account on our server and the URL for a repo that contains a homework assignment.  You will use `git` commands (`clone`, `add`, `commit`, and `push`) to obtain base code and submit your work.
+
+### Joining the Class
+
+To participate, send an email to <mailto:nsommer@wooster.edu> from the email account you want to use for during the tutorial.  We will add you to the system, and then Git-keeper will send you a welcome email containing your username and password on the server.
+
+
+### Homework Assignment
+
+Git-keeper will send you a second email containing a clone URL along with directions and hints for the assignment.  It should look like:
+
+```
+Clone URL:
+coleman75@ccscmw.cs.moravian.edu:/home/coleman75/colemanb/cs100/hw_average.git
+
+
+This is the first programming problem for CCSC-MW 2018.  Your task is to
+Implement the function compute_hw_average that takes a list of homework
+scores as its parameter.
+
+The following built-in Python functions will help:
+
+* len(lst) - returns the length of a list
+* min(lst) - returns the minimum value in a list
+* sum(lst) - returns the sum of the elements in a list
+```
+
+To do this assignment, you need to `clone` the repo.  You can use:
+
+* Use the terminal.  For example:
+ `git clone coleman75@ccscmw.cs.moravian.edu:/home/coleman75/colemanb/cs100/hw_average.git`
+  
+* Use the [GitHub Desktop client](https://desktop.github.com/).  For example:
+
+  ![Github Desktop Screenshot](GithubDesktop.png)
+  
+* Use an IDE such as PyCharm.  For example:
+
+  ![PyCharm Screenshot](PyCharm.png)
+   
+   
+Whichever method you use you will be prompted for the password from the first email.
+
+
+### Complete and Submit the Assignment
+
+You now have the base code for this assignment, and you can write the function described.
+
+When you are ready, you will use `git` to `add`, `commit`, and `push` to submit your work.
+
+* Command line:
+ ```
+ git add hw_average.py
+ git commit -m "done!"
+ git push
+ ```
+* GitHub Desktop:
+
+  FIXME
+  
+* PyCharm:
+
+  ![PyCharm Commit and Push Screenshot](PyCharmCommit.png)
+  
+  
+Whichever method you use you will receive an email from `gitkeeper@moravian.edu` with feedback.  You are encouraged to submit multiple times with correct, incorrect, and non-compiling submissions.
+
+
 
 ## Part 2: The Faculty Role
 
