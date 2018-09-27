@@ -62,6 +62,7 @@ The following built-in Python functions will help:
 To do this assignment, you need to `clone` the repo.  You can use:
 
 * Use the terminal.  For example:
+
  `git clone coleman75@ccscmw.cs.moravian.edu:/home/coleman75/colemanb/cs100/hw_average.git`
   
   
