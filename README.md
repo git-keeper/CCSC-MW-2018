@@ -64,9 +64,6 @@ To do this assignment, you need to `clone` the repo.  You can use:
 * Use the terminal.  For example:
  `git clone coleman75@ccscmw.cs.moravian.edu:/home/coleman75/colemanb/cs100/hw_average.git`
   
-* Use the [GitHub Desktop client](https://desktop.github.com/).  For example:
-
-  ![Github Desktop Screenshot](GithubDesktop.png)
   
 * Use an IDE such as PyCharm.  For example:
 
@@ -88,10 +85,7 @@ When you are ready, you will use `git` to `add`, `commit`, and `push` to submit 
  git commit -m "done!"
  git push
  ```
-* GitHub Desktop:
 
-  FIXME
-  
 * PyCharm:
 
   ![PyCharm Commit and Push Screenshot](PyCharmCommit.png)
