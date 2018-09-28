@@ -115,10 +115,10 @@ complete and submit.
 ### Installing the Git-keeper Client
 
 Faculty members interact with Git-keeper via a command line client. The client
-can be installed using `pip` like this (FIXME: Switch from pypi test):
+can be installed using `pip` like this:
 
 ```
-python3 -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/  git-keeper-client
+python3 -m pip install git-keeper-client
 ```
 
 If you are familiar with Python virtual environments, you may want to install
@@ -277,7 +277,7 @@ simple way to go about it:
 SUBMISSION_DIR=$1
 
 # Run the student's code and put the output (stdout and stderr) in output.txt
-python $SUBMISSION_DIR/hello_world.py &> output.txt
+python3 $SUBMISSION_DIR/hello_world.py &> output.txt
 
 # Compare the output with the expected output. Throw away the diff output
 # because we only care about diff's exit code. If we did not throw the output
@@ -345,7 +345,7 @@ but you can update the tests.
 ## Fetching Submissions
 
 When you want to grade your students' submissions, you can fetch them with
-`gkeep fetch`. (FIXME: mention setting the submissions path?).
+`gkeep fetch`.
 
 The directory containing the fetched submissions will have the same name as the
 assignment directory, so be sure to fetch in a new directory that will contain
