@@ -6,6 +6,18 @@
 
 This document contains instructions for the Git-keeper tutorial session at the CCSC 2018 Midwest Conference.  The other files in the  repository are example assignments (used in the later parts of the tutorial session).
 
+## Participant Accounts
+
+To participate in this workshop you will need an account on our server.  Please send an email to nsommer@wooster.edu with the subject "Git-keeper tutorial" and we will create an account for you.
+
+## What is Git-keeper?
+
+Git-keeper is a system for distributing, collecting, and automatically testing
+programming assignments with instant feedback. Through using the system,
+students are introduced to the basic Git concepts of cloning, committing, and
+pushing. Git-keeper is designed to be simple enough that students can start
+using it at the very beginning of an introductory programming course.
+
 
 ## Prerequisites
 
@@ -19,16 +31,7 @@ following:
 If you are running Windows and you do not have a UNIX-like environment
 installed such as the Windows Subsystem for Linux or Cygwin, you can still play the student role assuming you have a Git client installed.
 
-To begin, send an email to nsommer@wooster.edu with the subject "Git-keeper
-tutorial" and we will create an account for you on our tutorial server.
 
-## What is Git-keeper?
-
-Git-keeper is a system for distributing, collecting, and automatically testing
-programming assignments with instant feedback. Through using the system,
-students are introduced to the basic Git concepts of cloning, committing, and
-pushing. Git-keeper is designed to be simple enough that students can start
-using it at the very beginning of an introductory programming course.
 
 ## Part 1: The Student Role
 
