@@ -1,5 +1,7 @@
 # Git-keeper: An Automated Assignment Testing Environment Based on Git
 
+## https://github.com/git-keeper/CCSC-MW-2018
+
 ### CCSC 2018 Midwest Conference
 
 This document contains instructions for the Git-keeper tutorial session at the CCSC 2018 Midwest Conference.  The other files in the  repository are example assignments (used in the later parts of the tutorial session).
