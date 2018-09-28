@@ -1,13 +1,31 @@
 # Git-keeper: An Automated Assignment Testing Environment Based on Git
 
-## CCSC 2018 Midwest Conference
+### CCSC 2018 Midwest Conference
 
-### Ben Coleman and Nathan Sommer
+This document contains instructions for the Git-keeper tutorial session at the CCSC 2018 Midwest Conference.  The other files in the  repository are example assignments (used in the later parts of the tutorial session).
 
-This repository contains instructions and example assignments for the
-Git-keeper tutorial session at the CCSC 2018 Midwest Conference.
 
-## Prerequisites
+## Part 0: Introduction
+
+### Authors
+
+* Ben Coleman (<mailto:colemanb@moravian.edu>) Moravian College
+* Nathan Sommer (<mailto:nsommer@wooster.edu>) The College of Wooster
+
+### Participant Accounts
+
+To participate in this workshop you will need an account on our server.  Please send an email to <mailto:nsommer@wooster.edu> with the subject "Git-keeper tutorial" and we will create an account for you.
+
+### What is Git-keeper?
+
+Git-keeper is a system for distributing, collecting, and automatically testing
+programming assignments with instant feedback. Through using the system,
+students are introduced to the basic Git concepts of cloning, committing, and
+pushing. Git-keeper is designed to be simple enough that students can start
+using it at the very beginning of an introductory programming course.
+
+
+### Software Prerequisites
 
 To fully participate in this tutorial, you will need a computer with the
 following:
@@ -17,10 +35,74 @@ following:
 * A UNIX-like command-line environment
 
 If you are running Windows and you do not have a UNIX-like environment
-installed such as the Windows Subsystem for Linux or Cygwin, you can still
-play the student role assuming you have a Git client installed.
+installed such as the Windows Subsystem for Linux or Cygwin, you can still play the student role assuming you have a Git client installed.
+
 
 ## Part 1: The Student Role
+
+In this portion of the tutorial you will experience Git-keeper from the student perspective.  The system will provide you with an account on our server and the URL for a repo that contains a homework assignment.  You will use `git` commands (`clone`, `add`, `commit`, and `push`) to obtain base code and submit your work.
+
+### Joining the Class
+
+To participate, send an email to <mailto:nsommer@wooster.edu> from the email account you want to use for during the tutorial.  We will add you to the system, and then Git-keeper will send you a welcome email containing your username and password on the server.
+
+
+### Homework Assignment
+
+Git-keeper will send you a second email containing a clone URL along with directions and hints for the assignment.  It should look like:
+
+```
+Clone URL:
+coleman75@ccscmw.cs.moravian.edu:/home/coleman75/colemanb/cs100/hw_average.git
+
+
+This is the first programming problem for CCSC-MW 2018.  Your task is to
+Implement the function compute_hw_average that takes a list of homework
+scores as its parameter.
+
+The following built-in Python functions will help:
+
+* len(lst) - returns the length of a list
+* min(lst) - returns the minimum value in a list
+* sum(lst) - returns the sum of the elements in a list
+```
+
+To do this assignment, you need to `clone` the repo.  You can use:
+
+* Use the terminal.  For example:
+
+  `git clone coleman75@ccscmw.cs.moravian.edu:/home/coleman75/colemanb/cs100/hw_average.git`
+  
+  
+* Use an IDE such as PyCharm.  For example:
+
+  ![PyCharm Screenshot](PyCharm.png)
+   
+   
+Whichever method you use you will be prompted for the password from the first email.
+
+
+### Complete and Submit the Assignment
+
+You now have the base code for this assignment, and you can write the function described.
+
+When you are ready, you will use `git` to `add`, `commit`, and `push` to submit your work.
+
+* Command line:
+ ```
+ git add hw_average.py
+ git commit -m "done!"
+ git push
+ ```
+
+* PyCharm:
+
+  ![PyCharm Commit and Push Screenshot](PyCharmCommit.png)
+  
+  
+Whichever method you use you will receive an email from `gitkeeper@moravian.edu` with feedback.  You are encouraged to submit multiple times with correct, incorrect, and non-compiling submissions.
+
+
 
 ## Part 2: The Faculty Role
 
@@ -33,10 +115,10 @@ complete and submit.
 ### Installing the Git-keeper Client
 
 Faculty members interact with Git-keeper via a command line client. The client
-can be installed using `pip` like this (FIXME: Switch from pypi test):
+can be installed using `pip` like this:
 
 ```
-python3 -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/  git-keeper-client
+python3 -m pip install git-keeper-client
 ```
 
 If you are familiar with Python virtual environments, you may want to install
@@ -195,7 +277,7 @@ simple way to go about it:
 SUBMISSION_DIR=$1
 
 # Run the student's code and put the output (stdout and stderr) in output.txt
-python $SUBMISSION_DIR/hello_world.py &> output.txt
+python3 $SUBMISSION_DIR/hello_world.py &> output.txt
 
 # Compare the output with the expected output. Throw away the diff output
 # because we only care about diff's exit code. If we did not throw the output
@@ -263,7 +345,7 @@ but you can update the tests.
 ## Fetching Submissions
 
 When you want to grade your students' submissions, you can fetch them with
-`gkeep fetch`. (FIXME: mention setting the submissions path?).
+`gkeep fetch`.
 
 The directory containing the fetched submissions will have the same name as the
 assignment directory, so be sure to fetch in a new directory that will contain
