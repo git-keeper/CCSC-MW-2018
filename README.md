@@ -361,3 +361,13 @@ The fetched directory for the assigment contains 2 subdirectories: `reports`
 and `submissions`. `reports` contains the text of the emails that your students
 received when they submitted. The `submissions` directory contains the code
 that your students submitted.
+
+## Running a Git-keeper Server
+
+If you would like to try setting up your own Git-keeper server after the
+conference, head over to the
+[Git-keeper Wiki](https://github.com/git-keeper/git-keeper/wiki) on GitHub for
+documentation.
+
+If you plan to use Git-keeper, please let us know! We would also be happy to
+answer any questions you might have.
