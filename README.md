@@ -2,11 +2,15 @@
 
 ### CCSC 2018 Midwest Conference
 
+This document contains instructions for the Git-keeper tutorial session at the CCSC 2018 Midwest Conference.  The other files in the  repository are example assignments (used in the later parts of the tutorial session).
+
+
 ## Part 0: Introduction
 
-### Ben Coleman and Nathan Sommer
+### Authors
 
-This document contains instructions for the Git-keeper tutorial session at the CCSC 2018 Midwest Conference.  The other files in the  repository are example assignments (used in the later parts of the tutorial session).
+* Ben Coleman (<mailto:colemanb@moravian.edu>) Moravian College
+* Nathan Sommer (<mailto:nsommer@wooster.edu>) The College of Wooster
 
 ### Participant Accounts
 
