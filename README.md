@@ -14,7 +14,7 @@ This document contains instructions for the Git-keeper tutorial session at the C
 
 ### Participant Accounts
 
-To participate in this workshop you will need an account on our server.  Please send an email to nsommer@wooster.edu with the subject "Git-keeper tutorial" and we will create an account for you.
+To participate in this workshop you will need an account on our server.  Please send an email to <mailto:nsommer@wooster.edu> with the subject "Git-keeper tutorial" and we will create an account for you.
 
 ### What is Git-keeper?
 
