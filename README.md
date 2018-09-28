@@ -1,16 +1,18 @@
 # Git-keeper: An Automated Assignment Testing Environment Based on Git
 
-## CCSC 2018 Midwest Conference
+### CCSC 2018 Midwest Conference
+
+## Part 0: Introduction
 
 ### Ben Coleman and Nathan Sommer
 
 This document contains instructions for the Git-keeper tutorial session at the CCSC 2018 Midwest Conference.  The other files in the  repository are example assignments (used in the later parts of the tutorial session).
 
-## Participant Accounts
+### Participant Accounts
 
 To participate in this workshop you will need an account on our server.  Please send an email to nsommer@wooster.edu with the subject "Git-keeper tutorial" and we will create an account for you.
 
-## What is Git-keeper?
+### What is Git-keeper?
 
 Git-keeper is a system for distributing, collecting, and automatically testing
 programming assignments with instant feedback. Through using the system,
@@ -19,7 +21,7 @@ pushing. Git-keeper is designed to be simple enough that students can start
 using it at the very beginning of an introductory programming course.
 
 
-## Prerequisites
+### Software Prerequisites
 
 To fully participate in this tutorial, you will need a computer with the
 following:
@@ -30,7 +32,6 @@ following:
 
 If you are running Windows and you do not have a UNIX-like environment
 installed such as the Windows Subsystem for Linux or Cygwin, you can still play the student role assuming you have a Git client installed.
-
 
 
 ## Part 1: The Student Role
